@@ -10,6 +10,10 @@ def index(request):
     return render(request,'rango/index.html',context=context_dict)
 
 def about(request):
-    html="<html> <body><a href='/rango/'>Index</a></br><p>Rango says here is the about page.</p></body></html>"
-    return HttpResponse(html)
+    # chapter 3:
+    # html="<html> <body><a href='/rango/'>Index</a></br><p>Rango says here is the about page.</p></body></html>"
+    # return HttpResponse(html)
+    # chapter 4:
+    return render(request,'rango/about.html')
+
     
