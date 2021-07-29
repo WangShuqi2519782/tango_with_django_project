@@ -25,7 +25,7 @@ def about(request):
     # chapter 3:
     # html="<html> <body><a href='/rango/'>Index</a></br><p>Rango says here is the about page.</p></body></html>"
     # return HttpResponse(html)
-    return render(request,'rango/about.html')
+    return render(request,'rango/about.html',{})
 
 def show_category(request,category_name_slug):
     context_dict={}
